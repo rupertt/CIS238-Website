@@ -18,28 +18,28 @@
 
 <!-- Sidebar/menu -->
 <nav class="sidebar red collapse top large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="button hide-large display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <a href="javascript:void(0)" onclick="close()" class="button hide-large display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="container">
     <h3 class="padding-64"><b>Company<br>Name</b></h3>
   </div>
   <div class="bar-block">
-    <a href="#" onclick="w3_close()" class="bar-item button hover-white">Home</a>
-    <a href="#showcase" onclick="w3_close()" class="bar-item button hover-white">Showcase</a>
-    <a href="#services" onclick="w3_close()" class="bar-item button hover-white">Services</a>
-    <a href="#designers" onclick="w3_close()" class="bar-item button hover-white">Designers</a>
-    <a href="#packages" onclick="w3_close()" class="bar-item button hover-white">Packages</a>
-    <a href="#contact" onclick="w3_close()" class="bar-item button hover-white">Contact</a>
+    <a href="#" onclick="close()" class="bar-item button hover-white">Home</a>
+    <a href="#showcase" onclick="close()" class="bar-item button hover-white">Showcase</a>
+    <a href="#services" onclick="close()" class="bar-item button hover-white">Services</a>
+    <a href="#designers" onclick="close()" class="bar-item button hover-white">Designers</a>
+    <a href="#packages" onclick="close()" class="bar-item button hover-white">Packages</a>
+    <a href="#contact" onclick="close()" class="bar-item button hover-white">Contact</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="container top hide-large red xlarge padding">
-  <a href="javascript:void(0)" class="button red margin-right" onclick="w3_open()">☰</a>
+  <a href="javascript:void(0)" class="button red margin-right" onclick="open()">☰</a>
   <span>Company Name</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="overlay hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="overlay hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="main" style="margin-left:340px;margin-right:40px">
@@ -54,15 +54,15 @@
   <!-- Photo grid (modal) -->
   <div class="row-padding">
     <div class="s1">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="/images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
     </div>
 
     <div class="s1">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+      <img src="/images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
     </div>
   </div>
 
@@ -102,7 +102,7 @@
   <div class="row-padding grayscale">
     <div class="col m4 margin-bottom">
       <div class="light-grey">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <img src="/images/team2.jpg" alt="John" style="width:100%">
         <div class="container">
           <h3>John Doe</h3>
           <p class="opacity">CEO & Founder</p>
@@ -112,7 +112,7 @@
     </div>
     <div class="col m4 margin-bottom">
       <div class="light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <img src="/images/team1.jpg" alt="Jane" style="width:100%">
         <div class="container">
           <h3>Jane Doe</h3>
           <p class="opacity">Designer</p>
@@ -122,7 +122,7 @@
     </div>
     <div class="col m4 margin-bottom">
       <div class="light-grey">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <img src="/images/team3.jpg" alt="Mike" style="width:100%">
         <div class="container">
           <h3>Mike Ross</h3>
           <p class="opacity">Architect</p>
@@ -202,17 +202,17 @@
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="light-grey container padding-32" style="margin-top:75px;padding-right:58px"><p class="right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-opacity">w3.css</a></p></div>
+<!-- CSS Container -->
+<div class="light-grey container padding-32" style="margin-top:75px;padding-right:58px"><p class="right">Footer</a></p></div>
 
 <script>
 // Script to open and close sidebar
-function w3_open() {
+function open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
 
-function w3_close() {
+function close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
